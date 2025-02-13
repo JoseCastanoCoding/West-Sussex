@@ -45,14 +45,14 @@ a {
     left: 0;
 }
 
-/***** Content *****/
+/***** Sidebar Content *****/
 
 .content {
     width: 100%;
     transition: all 0.3s;
 }
 
-/***** Dark overlay *****/
+/***** Sidebar Dark overlay *****/
 
 .overlay {
     display: none;
@@ -89,7 +89,7 @@ a {
     box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2);
 }
 
-/* Style for all buttons with the class btn-customized */
+/* Sidebar Style for all buttons with the class btn-customized */
 
 a.btn-customized {
     margin-left: 5px;
@@ -223,6 +223,8 @@ a[aria-expanded="true"] {
     text-align: center;
 }
 
+/*****Sections ******/
+
 section {
     height: 100vh;
     display: flex;
@@ -237,10 +239,18 @@ section.whatIDoMainCard {
     height: 100vh;
     display: flex;
     align-items: normal;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     text-align: center;
     padding: 0 20px;
+}
+
+section#contactMeForm {
+    text-align: start;
+}
+
+#formWidth {
+    width: 75%;
 }
 
 .animate {
@@ -296,6 +306,8 @@ section.whatIDoMainCard {
     -webkit-box-decoration-break: clone;
 }
 
+/****Animated gradient border****/
+
 #box {
     display: flex;
     align-items: center;
@@ -337,10 +349,27 @@ section.whatIDoMainCard {
     }
 }
 
-section#contactMeForm {
-    text-align: start;
-}
 
-#formWidth {
-    width: 75%;
-}
+
+/***`sm` applies to x-small devices (portrait phones, less than 576px)***/
+@media (max-width: 575.98px) { 
+    #box {
+        width: 300px;
+        height: 150px;
+        font-size: 2rem;
+    }
+
+ }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+
