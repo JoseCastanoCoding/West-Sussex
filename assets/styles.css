@@ -299,7 +299,9 @@ section#contactMeForm {
     padding: 32px;
 }
 
-.card mark, .form-label mark, .form-text mark  {
+.card mark,
+.form-label mark,
+.form-text mark {
     background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
     background-clip: text;
     -webkit-text-fill-color: #0000;
@@ -349,19 +351,54 @@ section#contactMeForm {
     }
 }
 
+.tech-slideshow {
+    height: 200px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
 
+.tech-slideshow > div {
+    height: 200px;
+    width: 2526px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+    animation: moveSlideshow 12s linear infinite;
+}
+.tech-slideshow .mover-2 {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    background-position: 0 -200px;
+    animation: moveSlideshow 15s linear infinite;
+}
+.tech-slideshow:hover .mover-2 {
+    opacity: 1;
+}
+
+@keyframes moveSlideshow {
+    100% {
+        transform: translateX(-66.6666%);
+    }
+}
 
 /***`sm` applies to x-small devices (portrait phones, less than 576px)***/
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     #box {
         width: 300px;
         height: 150px;
         font-size: 2rem;
     }
+}
 
- }
-
-// `md` applies to small devices (landscape phones, less than 768px)
+/* // `md` applies to small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { ... }
 
 // `lg` applies to medium devices (tablets, less than 992px)
@@ -371,5 +408,4 @@ section#contactMeForm {
 @media (max-width: 1199.98px) { ... }
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) { ... }
-
+@media (max-width: 1399.98px) { ... } */
