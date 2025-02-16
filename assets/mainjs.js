@@ -63,3 +63,24 @@ jQuery(document).ready(function() {
   window.addEventListener("scroll", handleScroll);
 
 });
+
+$('#contactFormCustomerDetails').on('submit', function(event) {
+    event.preventDefault(); // prevent reload
+    
+    var formData = new FormData(this);
+    formData.append('service_id', 'service_e8zfcza');
+    formData.append('template_id', 'template_1bly4l6');
+    formData.append('user_id', 'NwRE7fbZdGQeHfDDK');
+ 
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+        type: 'POST',
+        data: formData,
+        contentType: false, // auto-detection
+        processData: false // no need to parse formData to string
+    }).done(function() {        
+        $('#contactFormCustomerDetails')[0].reset();
+        $('#customerFormSentModal').modal('show');
+    }).fail(function(error) {
+        alert('Oops... ' + JSON.stringify(error));
+    });
+});
