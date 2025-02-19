@@ -300,7 +300,7 @@ a[aria-expanded=true] {
   font-size: 2em;
 }
 
-section {
+section#firstView {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -310,18 +310,8 @@ section {
   padding: 0 20px;
 }
 
-section.whatIDoMainCard {
-  height: 100vh;
-  display: flex;
-  align-items: normal;
-  justify-content: flex-start;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 20px;
-}
-
-section.businessCards {
-  height: 75vh;
+section.businessCards, section.ecommercePlatforms, section.contactMeForm, section.footer {
+  margin-top: 8rem;
 }
 
 section#contactMeForm {
@@ -329,7 +319,6 @@ section#contactMeForm {
 }
 
 #formWidth {
-  width: 75%;
   isolation: isolate;
   --text-color: #fff;
   --text-color-2: #f3f8fa;
@@ -371,6 +360,7 @@ section#contactMeForm {
   gap: 24px;
   padding: 32px;
   align-items: center;
+  text-align: center;
 }
 .card mark {
   background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
@@ -410,6 +400,7 @@ form .btn-primary {
   height: 200px;
   color: white;
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .gradient-border {

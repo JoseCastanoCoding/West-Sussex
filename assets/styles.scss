@@ -311,7 +311,7 @@ a[aria-expanded="true"] {
 .Typewriter__cursor {
 	font-size: 2em;
 }
-section {
+section#firstView {
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -320,23 +320,14 @@ section {
 	text-align: center;
 	padding: 0 20px;
 }
-section.whatIDoMainCard {
-	height: 100vh;
-	display: flex;
-	align-items: normal;
-	justify-content: flex-start;
-	flex-direction: column;
-	text-align: center;
-	padding: 0 20px;
+section.businessCards, section.ecommercePlatforms, section.contactMeForm, section.footer {
+	margin-top: 8rem;
 }
-section.businessCards {
-	height: 75vh;
-}
+
 section#contactMeForm {
 	text-align: start;
 }
-#formWidth {
-	width: 75%;
+#formWidth {	
 	isolation: isolate;
 	--text-color: #fff;
 	--text-color-2: #f3f8fa;
@@ -375,6 +366,7 @@ section#contactMeForm {
 	gap: 24px;
 	padding: 32px;
 	align-items: center;
+	text-align: center;
 	mark {
 		background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
 		background-clip: text;
@@ -417,6 +409,7 @@ form {
 	height: 200px;
 	color: $color_3;
 	font-size: 2.5rem;
+	text-align: center;
 }
 .gradient-border {
 	border-width: $borderWidth;
