@@ -63,8 +63,8 @@
             >
           </li>
           <li>
-            <a class="scroll-link" href="#section-2"
-              ><i class="fas fa-user"></i> About us</a
+            <a class="scroll-link" href="#" id="goToPlatformsSection"
+              ><i class="fas fa-user"></i> Platforms I can help with</a
             >
           </li>
           <li>
@@ -109,7 +109,7 @@
     </section>
     
     <section class="whatIDoMainCard">
-      <div class="container-fluid px-5">
+      <div class="container-fluid px-sm-0 px-md-2 px-lg-5">
         <div class="animate row" data-animate>
           <div class="col">
             <article class="card">
@@ -134,7 +134,7 @@
     </section>
     
     <section class="businessCards">
-      <div class="container-fluid px-5">
+      <div class="container-fluid px-sm-0 px-md-2 px-lg-5">
         <div class="animate row" data-animate>
           <div class="col-sm-12 col-md-6 col-lg-4">
             <article class="card">
@@ -162,7 +162,7 @@
               </div>
             </article>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="col-sm-12 col-lg-4">
             <article class="card">
               <h2 class="card__title"><mark>Hosting</mark> & maintenance</h2>
               <p>
@@ -180,7 +180,7 @@
     </section>
     
     <section class="ecommercePlatforms">
-      <div class="container-fluid px-5">
+      <div class="container-fluid px-sm-0 px-md-2 px-lg-5">
         <div class="animate row" data-animate>
           <div class="col">
             <article class="card">
@@ -340,52 +340,61 @@
     </section>
     
     <section class="contactMeForm">
-      <div class="container-fluid px-5">
-        <div class="animate" data-animate id="formWidth">
-          <form id="contactFormCustomerDetails">
-            <div class="mb-3">
-              <label for="inputEmail" class="form-label"
-                ><mark>Your email address</mark></label
-              >
-              <input
-                type="text"
-                name="emailAddress"
-                class="form-control"
-                id="inputEmail"
-                aria-describedby="emailHelp"
-                required
-              />
-              <div id="emailHelp" class="form-text text-white">
-                We'll never share your email with anyone else
+      <div class="container-fluid px-sm-0 px-md-2 px-lg-5">
+        <div class="animate row" data-animate id="formWidth">
+          <div class="col">
+            <form id="contactFormCustomerDetails">
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label"
+                  ><mark>Your email address</mark></label
+                >
+                <input
+                  type="text"
+                  name="emailAddress"
+                  class="form-control"
+                  id="inputEmail"
+                  aria-describedby="emailHelp"
+                  required
+                />
+                <div id="emailHelp" class="form-text text-white">
+                  We'll never share your email with anyone else
+                </div>
               </div>
-            </div>
-  
-            <div class="mb-3">
-              <label for="inputTextArea" class="form-label"
-                ><mark>Your message</mark></label
-              >
-              <textarea
-                name="customerMessage"
-                class="form-control"
-                id="inputTextArea"
-                rows="3"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="hvr-grow btn btn-primary">Submit</button>
-          </form>
+    
+              <div class="mb-3">
+                <label for="inputTextArea" class="form-label"
+                  ><mark>Your message</mark></label
+                >
+                <textarea
+                  name="customerMessage"
+                  class="form-control"
+                  id="inputTextArea"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="hvr-grow btn btn-primary">Submit</button>
+            </form>
+          </div>
+          
         </div>
       </div>
     </section>
 
     <section class="footer">
       <div class="container-fluid px-5 footer">      
-        <div class="row">
+        <div class="row align-items-center pb-5">
           <div class="col">
-            <h2>Fancy being social?</h2>
+            <h2 class="text-center mb-5">Fancy being social?</h2>
+            <div class="footerSocialIcons">
+              <i class="fa-brands fa-linkedin fa-2xl"></i>
+              <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
+              <i class="fa-brands fa-square-instagram fa-2xl"></i>
+            </div>
+            
           </div>
           <div class="col">
-            <p>Copyright &#169; 2023 MyWebsite. All rights reserved.</p>
+            <p>Copyright &#169; 2025 MyWebsite. All rights reserved.</p>
           </div>
           <div class="col"></div>
         </div>      

@@ -544,6 +544,8 @@ form {
 		height: 150px;
 		font-size: 2rem;
 	}
+
+	
 }
 
 @mixin white-gradient {
@@ -633,4 +635,11 @@ $animationSpeed: 30s;
             }
         }
     }
+}
+
+section.footer {
+	.footerSocialIcons {
+		display: flex;		
+		justify-content: space-evenly;		
+	}
 }

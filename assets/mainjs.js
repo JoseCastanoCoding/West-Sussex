@@ -18,6 +18,17 @@ jQuery(document).ready(function() {
         }, 500);
         
     });
+
+    $('#goToPlatformsSection').on("click", function () {
+
+        $('.sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        
+        setTimeout(() => {
+            $('html, body').animate({ scrollTop: $('.ecommercePlatforms').offset().top }, 'smooth');
+        }, 500);
+        
+    });
  
     $('.open-menu').on('click', function(e) {
         e.preventDefault();

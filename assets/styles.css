@@ -556,4 +556,9 @@ form .btn-primary {
 .modal .modal-content .modal-footer .btn-secondary {
   background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
   font-size: 25px;
+}
+
+section.footer .footerSocialIcons {
+  display: flex;
+  justify-content: space-evenly;
 }/*# sourceMappingURL=styles.css.map */
