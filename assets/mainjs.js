@@ -73,6 +73,18 @@ jQuery(document).ready(function() {
   handleScroll(); // Run on page load
   window.addEventListener("scroll", handleScroll);
 
+  $(".accordion_head").click(function () {
+        if ($('.accordion_body').is(':visible')) {
+            $(".accordion_body").slideUp(300);
+            $('.accordion_head p').text('Read more...');
+            $('.accordion_head span.plusminus').text('+');
+        } else {
+            $(".accordion_body").slideDown(300);            
+            $('.accordion_head p').text('Read less');
+            $('.accordion_head p .plusminus').text('-');
+        }
+    });
+
 });
 
 $('#contactFormCustomerDetails').on('submit', function(event) {

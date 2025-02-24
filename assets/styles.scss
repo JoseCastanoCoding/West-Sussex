@@ -41,6 +41,7 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	font-variation-settings: "wdth" 100;
+	background-color: #d3d1d9;
 }
 a {
 	text-decoration: none;
@@ -324,8 +325,20 @@ section.businessCards, section.ecommercePlatforms, section.contactMeForm, sectio
 	margin-top: 8rem;
 }
 
+.accordion_head {
+    font-size: 35px;
+    margin: 0 0 1px 0;
+    padding: 7px 11px;
+    font-weight: bold;
+}
+
+.plusminus {
+    padding-left: 80px;
+}
+
 section#contactMeForm {
 	text-align: start;
+	
 }
 #formWidth {	
 	isolation: isolate;
@@ -341,6 +354,14 @@ section#contactMeForm {
 	flex-direction: column;
 	gap: 24px;
 	padding: 32px;
+	margin-left: 0;
+    margin-right: 0;
+	h2 mark{
+		background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
+		background-clip: text;
+		-webkit-text-fill-color: #0000;
+		-webkit-box-decoration-break: clone;
+	}
 }
 .animate {
 	opacity: 0;
@@ -367,6 +388,8 @@ section#contactMeForm {
 	padding: 32px;
 	align-items: center;
 	text-align: center;
+	height: 100%;
+	justify-content: space-between;
 	mark {
 		background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
 		background-clip: text;
@@ -545,6 +568,21 @@ form {
 		font-size: 2rem;
 	}
 
+	.whatIDoMainCardDesktopView {
+		display: none;
+	}
+
+	.whatIDoMainCardMobileView {
+		display: flex!important;
+	}
+
+	.Typewriter__wrapper h1 {
+		font-size: 3.25rem;
+	}
+
+	#dotlottie-canvas {
+		display: none;
+	}
 	
 }
 
@@ -569,7 +607,7 @@ $animationSpeed: 30s;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-	width: 960px;
+	width: 100%;
 	
 	&::before,
 	&::after {

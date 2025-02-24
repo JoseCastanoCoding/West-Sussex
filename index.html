@@ -111,7 +111,7 @@
     <section class="whatIDoMainCard">
       <div class="container-fluid px-sm-0 px-md-2 px-lg-5">
         <div class="animate row" data-animate>
-          <div class="col">
+          <div class="col whatIDoMainCardDesktopView">
             <article class="card">
               <h2><mark>Websites</mark> that work as hard as you do</h2>
               <h3>
@@ -125,7 +125,33 @@
                 websites that make your goals happen.
               </p>
               <div class="gradient-border" id="box">
-                <a href="#contactMeForm" class="hvr-grow">Get <br />in touch</a>
+                <a href="#customerForm" class="hvr-grow">Get <br />in touch</a>
+              </div>
+            </article>
+          </div>
+          <div class="col whatIDoMainCardMobileView d-none">
+            <article class="card">
+              <h2><mark>Websites</mark> that work as hard as you do</h2>
+              <div class="accordion_container">
+                <div class="accordion_head"><p>Read more...<span class="plusminus">+</span></p>
+            
+                </div>
+                <div class="accordion_body" style="display: none;">
+                  <h3>
+                    E-commerce? Check. Stunning designs? You got it. Maintenance,
+                    hosting, and cloud solutions? Done.
+                  </h3>
+                  <p>
+                    Welcome to your one-stop shop for websites that don't just
+                    exist—they thrive. Whether you're a scrappy startup, a booming
+                    business, or someone with a vision, I design, build, and fine-tune
+                    websites that make your goals happen.
+                  </p>
+                  <div class="gradient-border" id="box">
+                    <a href="#contactMeForm" class="hvr-grow">Get <br />in touch</a>
+                  </div>
+                </div>
+                
               </div>
             </article>
           </div>
@@ -135,8 +161,8 @@
     
     <section class="businessCards">
       <div class="container-fluid px-sm-0 px-md-2 px-lg-5">
-        <div class="animate row" data-animate>
-          <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="animate row gy-5" data-animate>
+          <div class="col col-lg-6 col-xl-4">
             <article class="card">
               <h2 class="card__title"><mark>Custom</mark> website design</h2>
               <p>
@@ -148,7 +174,7 @@
               </div>
             </article>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="col col-lg-6 col-xl-4">
             <article class="card">
               <h2 class="card__title"><mark>E-Commerce</mark> that sells</h2>
               <p>
@@ -156,13 +182,13 @@
                 for your customers (and profitable for you).
               </p>
               <div class="gradient-border" id="box">
-                <a href="#ecommercePlatforms" class="hvr-grow"
+                <a href="#ecommerceSection" class="hvr-grow"
                   >Platforms <br />I can help with</a
                 >
               </div>
             </article>
           </div>
-          <div class="col-sm-12 col-lg-4">
+          <div class="col col-xl-4">
             <article class="card">
               <h2 class="card__title"><mark>Hosting</mark> & maintenance</h2>
               <p>
@@ -179,7 +205,7 @@
       </div>
     </section>
     
-    <section class="ecommercePlatforms">
+    <section class="ecommercePlatforms" id="ecommerceSection">
       <div class="container-fluid px-sm-0 px-md-2 px-lg-5">
         <div class="animate row" data-animate>
           <div class="col">
@@ -339,10 +365,12 @@
       </div>
     </section>
     
-    <section class="contactMeForm">
+    <section class="contactMeForm" id="customerForm">
       <div class="container-fluid px-sm-0 px-md-2 px-lg-5">
+        
         <div class="animate row" data-animate id="formWidth">
-          <div class="col">
+          <h2 class="text-center"><mark>Send me a message</mark></h2>
+          <div class="col">            
             <form id="contactFormCustomerDetails">
               <div class="mb-3">
                 <label for="inputEmail" class="form-label"
