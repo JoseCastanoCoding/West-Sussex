@@ -311,7 +311,7 @@ section#firstView {
   padding: 0 20px;
 }
 
-section.businessCards, section.ecommercePlatforms, section.contactMeForm, section.footer {
+section.businessCards, section.ecommercePlatforms, section.contactMeForm, section.footer, section.pricePlans {
   margin-top: 8rem;
 }
 
