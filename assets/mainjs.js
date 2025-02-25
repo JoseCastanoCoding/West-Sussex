@@ -29,6 +29,28 @@ jQuery(document).ready(function() {
         }, 500);
         
     });
+
+    $('#goToPricePlansSection').on("click", function () {
+
+        $('.sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        
+        setTimeout(() => {
+            $('html, body').animate({ scrollTop: $('.pricePlans').offset().top }, 'smooth');
+        }, 500);
+        
+    });
+
+    $('#goToContactFormSection').on("click", function () {
+
+        $('.sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        
+        setTimeout(() => {
+            $('html, body').animate({ scrollTop: $('.contactMeForm').offset().top }, 'smooth');
+        }, 500);
+        
+    });
  
     $('.open-menu').on('click', function(e) {
         e.preventDefault();
