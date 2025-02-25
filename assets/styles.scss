@@ -59,6 +59,9 @@ h3 {
 p {
 	font-size: 1.75rem;
 }
+ul {
+	list-style: none;
+}
 .wrapper {
 	display: block;
 }
@@ -395,6 +398,9 @@ section#contactMeForm {
 		background-clip: text;
 		-webkit-text-fill-color: #0000;
 		-webkit-box-decoration-break: clone;
+	}
+	ul {
+		font-size: 1.75rem;
 	}
 }
 
