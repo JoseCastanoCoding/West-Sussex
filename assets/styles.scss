@@ -685,5 +685,10 @@ section.footer {
 	.footerSocialIcons {
 		display: flex;		
 		justify-content: space-evenly;		
+		
+		i.fa-brands.fa-linkedin.fa-2xl, i.fa-brands.fa-square-x-twitter.fa-2xl, i.fa-brands.fa-square-instagram.fa-2xl {
+			font-size: 4em;
+			color: #0f0620;
+		}
 	}
 }

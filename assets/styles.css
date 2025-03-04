@@ -603,4 +603,8 @@ form .btn-primary {
 section.footer .footerSocialIcons {
   display: flex;
   justify-content: space-evenly;
+}
+section.footer .footerSocialIcons i.fa-brands.fa-linkedin.fa-2xl, section.footer .footerSocialIcons i.fa-brands.fa-square-x-twitter.fa-2xl, section.footer .footerSocialIcons i.fa-brands.fa-square-instagram.fa-2xl {
+  font-size: 4em;
+  color: #0f0620;
 }/*# sourceMappingURL=styles.css.map */
