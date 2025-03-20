@@ -43,7 +43,7 @@ jQuery(document).ready(function() {
 
     var typewriter = new Typewriter(typewriterHomepage, {
         loop: false,
-        delay: 75,
+        delay: 75,        
     });
 
     typewriter
