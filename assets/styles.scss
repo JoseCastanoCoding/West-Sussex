@@ -84,7 +84,7 @@ ul {
 	top: 0;
 	left: -255px;
 	z-index: 999;
-	background: #333;
+	background: #0f0620;
 	color: $color_1;
 	transition: all 0.3s;
 	box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);
@@ -101,9 +101,10 @@ ul {
 				padding: 10px 20px;
 				border: 0;
 				color: $color_1;
+				font-size: 25px;
 				&:hover {
 					outline: 0;
-					background: #555;
+					background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
 					color: $color_1;
 				}
 				&:focus {
@@ -222,7 +223,7 @@ a.btn-customized {
 	margin-left: 5px;
 	margin-right: 5px;
 	padding: 0.75rem 1.5rem;
-	background: #333;
+	background: #0f0620;
 	border: 0;
 	border-radius: 4px;
 	font-size: 16px;
@@ -294,13 +295,13 @@ a.btn-customized.btn.btn-primary {
 	top: 10px;
 	right: 10px;
 	transition: all 0.3s;
-	background: #444;
+	background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
 	border-radius: 4px;
 	text-align: center;
 	line-height: 35px;
 	cursor: pointer;
 	&:hover {
-		background: #555;
+		
 		color: $color_1;
 	}
 	&:focus {
@@ -324,7 +325,7 @@ section#firstView {
 	text-align: center;
 	padding: 0 20px;
 }
-section.businessCards, section.ecommercePlatforms, section.contactMeForm, section.footer, section.pricePlans {
+section.businessCards, section.ecommercePlatforms, section.contactMeForm, section.footer, section.pricePlans, section.portfolio-and-testimonials {
 	margin-top: 8rem;
 }
 
@@ -384,7 +385,6 @@ section#contactMeForm {
 	border-radius: 24px;
 	color: $color_2;
 	background: var(--bg-color);
-	border: 1px solid var(--border-color);
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
@@ -685,5 +685,10 @@ section.footer {
 	.footerSocialIcons {
 		display: flex;		
 		justify-content: space-evenly;		
+		
+		i.fa-brands.fa-linkedin.fa-2xl, i.fa-brands.fa-square-x-twitter.fa-2xl, i.fa-brands.fa-square-instagram.fa-2xl {
+			font-size: 4em;
+			color: #0f0620;
+		}
 	}
 }
