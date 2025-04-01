@@ -109,7 +109,7 @@ ul {
 				}
 				&:focus {
 					outline: 0;
-					background: #555;
+					background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);;
 					color: $color_1;
 				}
 				i {
@@ -121,15 +121,15 @@ ul {
 			>a {
 				&:hover {
 					outline: 0;
-					background: #555;
+					background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);;
 					color: $color_1;
 				}
 				&:focus {
 					outline: 0;
-					background: #555;
+					background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);;
 					color: $color_1;
 				}
-				background: #444;
+				background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);;
 				color: $color_1;
 			}
 		}
@@ -689,6 +689,8 @@ section.footer {
 		i.fa-brands.fa-linkedin.fa-2xl, i.fa-brands.fa-square-x-twitter.fa-2xl, i.fa-brands.fa-square-instagram.fa-2xl {
 			font-size: 4em;
 			color: #0f0620;
+			line-height: 1;
+			padding: 0 15px;
 		}
 	}
 }
