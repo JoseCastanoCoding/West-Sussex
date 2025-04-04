@@ -599,6 +599,10 @@ form .btn-primary {
   font-size: 25px;
 }
 
+#termsAndConditionsModal li, p {
+  color: #fff;
+}
+
 section.footer .footerSocialIcons {
   display: flex;
   justify-content: space-evenly;
@@ -608,4 +612,7 @@ section.footer .footerSocialIcons i.fa-brands.fa-linkedin.fa-2xl, section.footer
   color: #0f0620;
   line-height: 1;
   padding: 0 15px;
+}
+section.footer #termsAndConditions {
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

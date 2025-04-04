@@ -681,6 +681,10 @@ $animationSpeed: 30s;
     }
 }
 
+#termsAndConditionsModal li, p {
+	color: #fff;
+}
+
 section.footer {
 	.footerSocialIcons {
 		display: flex;		
@@ -692,5 +696,8 @@ section.footer {
 			line-height: 1;
 			padding: 0 15px;
 		}
+	}
+	#termsAndConditions {
+		cursor: pointer;
 	}
 }

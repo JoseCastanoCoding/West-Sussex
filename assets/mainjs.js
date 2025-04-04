@@ -85,6 +85,11 @@ jQuery(document).ready(function() {
         }
     });
 
+    var termsAndConditionsModal = $("#termsAndConditionsModal");
+    $("#termsAndConditions").on("click", function() {
+        termsAndConditionsModal.modal("show");
+    });
+
 });
 
 $('#contactFormCustomerDetails').on('submit', function(event) {

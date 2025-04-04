@@ -614,28 +614,39 @@
     </section>
 
     <section class="footer">
-      <div class="container-fluid px-5 footer">      
-        <div class="row align-items-center pb-5">
-          <div class="col">
-            <article class="card">
+      <div class="container-fluid px-5 footer">    
+        <article class="card align-items-stretch">
+          <div class="row align-items-center pb-5">
+            <div class="col">            
               <h2 class="text-center mb-5"><mark>Fancy being social?</mark></h2>
               <div class="footerSocialIcons">
                 <mark class="hvr-grow"><a target="_blank" href="https://www.linkedin.com/in/jose-alberto-castano-738707359/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></mark>
                 <mark class="hvr-grow"><i class="fa-brands fa-square-x-twitter fa-2xl"></i></mark>
                 <mark class="hvr-grow"><i class="fa-brands fa-square-instagram fa-2xl"></i></mark>
               </div>
-            </article>
-                        
-          </div>
-          <div class="col text-center">
-            <p>Copyright &#169; 2025<br> West Sussex web design</p>
-          </div>
-          <div class="col"></div>
-        </div>      
+                     
+            </div>
+            <div class="col text-center">
+              <p><mark>Copyright &#169; 2025<br> West Sussex web design</mark></p>
+              <p class="hvr-grow" id="termsAndConditions"><mark>Terms and conditions</mark></p> 
+              <!-- Button trigger modal -->
+              <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#termsAndConditionsModal">
+                Launch demo modal
+              </button> -->
+            </div>
+            <div class="col">
+              <h2 class="text-center mb-5"><mark>Get in touch</mark></h2>
+              <p><mark><a href="mailto:info@westsussexwebdesign.com" title="Ping us an email" data-toggle="tooltip">info@westsussexwebdesign.com</a></mark></p>
+              <p><mark><a href="tel:+447449482437" title="Give us a bell" data-toggle="tooltip">+44 7449 482 437</a></mark></p>
+
+            </div>
+          </div>  
+        </article>  
+            
       </div>
     </section>    
 
-    <!-- Modal -->
+    <!-- Modal Customer form sent-->
     <div
       class="modal fade"
       id="customerFormSentModal"
@@ -663,6 +674,76 @@
             >
               Close
             </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Terms and Conditions-->
+    <div class="modal fade" id="termsAndConditionsModal" tabindex="-1" aria-labelledby="termsAndConditionsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="termsAndConditionsModalLabel"><mark>Terms and Conditions</mark></h3>            
+          </div>
+          <div class="modal-body">
+            <p>Last updated: 05/04/2025</p>
+            <p>Welcome to West Sussex Web Design</p>
+            <p>These Terms and Conditions ("Terms") govern your access to and use of services provided by West Sussex Web Design, a freelance web designer operating under UK law. 
+              By engaging with our services, you agree to be bound by these Terms.
+            </p>
+            <ol>
+              <li><p>Services</p></li>
+              <p>I provide professional web design and development services tailored to your needs. The scope of work will be detailed in a written agreement or project 
+                brief prior to commencement.</p>
+              <li><p>Payments</p></li>
+              <ul>
+                <li><p>A 50% non-refundable deposit is required upfront before any work begins.</p></li>
+                <li><p>The remaining 50% is due upon final project delivery, prior to the transfer of files or website going live.</p></li>
+                <li><p>Payment can be made via bank transfer or any method specified in the invoice.</p></li>                
+              </ul>
+              <li><p>Project Timelines</p></li>
+              <ul>
+                <li><p>Estimated timelines will be agreed upon prior to project commencement.</p></li>
+                <li><p>Timelines are dependent on timely feedback, content delivery, and approvals from the client.</p></li>
+                <li><p>Delays in client response may affect the final delivery date.</p></li>                
+              </ul>
+              <li><p>Revisions</p></li>
+              <ul>
+                <li><p>3 rounds of revisions are included in the original project cost.</p></li>
+                <li><p>Additional revisions will be charged at hourly rate or fee.</p></li>
+              </ul>
+              <li><p>Client Responsibilities</p></li>
+              <ul>
+                <li><p>Providing accurate and timely content, materials, and feedback.</p></li>
+                <li><p>Ensuring they have the necessary rights to all content provided.</p></li>
+              </ul>
+              <li><p>Ownership & Copyright</p></li>
+              <ul>
+                <li><p>Upon full payment, all design and source files created for the client will be transferred and become the client's property.</p></li>
+                <li><p>Until the final payment is received, all deliverables remain the property of West Sussex Web Design.</p></li>
+              </ul>
+              <li><p>Cancellations & Refunds</p></li>
+              <ul>
+                <li><p>The 50% deposit is non-refundable.</p></li>
+                <li><p>If the client cancels the project after work has started, no further refunds will be issued, and any additional work completed beyond the deposit value may be invoiced.</p></li>
+              </ul>
+              <li><p>Limitation of Liability</p></li>
+              <ul>
+                <li><p>I am not liable for any loss or damage arising from the use of the completed website.</p></li>
+                <li><p>I do not guarantee uninterrupted or error-free operation of the website once handed over.</p></li>
+              </ul>
+              <li><p>Confidentiality</p></li>
+              <p>Any information shared by the client will be treated as confidential and will not be disclosed to third parties without written consent.</p>
+              <li><p>Governing Law</p></li>
+              <p>These Terms are governed by the laws of "England and Wales". Any disputes will be subject to the exclusive jurisdiction of the courts in Brighton and Hove.</p>
+            </ol>
+            <p>Contact</p>
+            <p>If you have any questions about these Terms, please get in touch at <a href="mailto:info@westsussexwebdesign.com">info@westsussexwebdesign.com</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             
           </div>
         </div>
