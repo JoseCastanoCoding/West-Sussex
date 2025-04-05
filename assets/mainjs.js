@@ -8,6 +8,17 @@ jQuery(document).ready(function() {
 
     });
 
+    $('#goToHomeSection').on("click", function () {
+
+        $('.sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        
+        setTimeout(() => {
+            $('html, body').animate({ scrollTop: 0 }, 'smooth');
+        }, 500);
+        
+    });
+
     $('#goToWhatIDoMainCardSection').on("click", function () {
 
         $('.sidebar').removeClass('active');
@@ -26,6 +37,28 @@ jQuery(document).ready(function() {
         
         setTimeout(() => {
             $('html, body').animate({ scrollTop: $('.ecommercePlatforms').offset().top }, 'smooth');
+        }, 500);
+        
+    });
+
+    $('#goToPortfolioSection').on("click", function () {
+
+        $('.sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        
+        setTimeout(() => {
+            $('html, body').animate({ scrollTop: $('.portfolio-and-testimonials').offset().top }, 'smooth');
+        }, 500);
+        
+    });
+
+    $('#goToContactMeSection').on("click", function () {
+
+        $('.sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        
+        setTimeout(() => {
+            $('html, body').animate({ scrollTop: $('.contactMeForm').offset().top }, 'smooth');
         }, 500);
         
     });

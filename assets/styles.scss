@@ -582,12 +582,24 @@ form {
 		display: flex!important;
 	}
 
+	.starterWebsitePackageDesktopView {
+		display: none;
+	}
+
+	.starterWebsitePackageMobileView {
+		display: flex!important;
+	}
+
 	.Typewriter__wrapper h1 {
 		font-size: 3.25rem;
 	}
 
 	#dotlottie-canvas {
 		display: none;
+	}	
+
+	section.footer .row .col:nth-child(2) {
+		order: 3;
 	}
 	
 }
@@ -681,14 +693,20 @@ $animationSpeed: 30s;
     }
 }
 
-#termsAndConditionsModal li, p {
-	color: #fff;
-}
+#termsAndConditionsModal {
+	li, p {
+		color: #fff;
+	}
+
+	::marker {
+		font-size: 1.75rem;
+	}
+} 
 
 section.footer {
 	.footerSocialIcons {
 		display: flex;		
-		justify-content: space-evenly;		
+		justify-content: center;		
 		
 		i.fa-brands.fa-linkedin.fa-2xl, i.fa-brands.fa-square-x-twitter.fa-2xl, i.fa-brands.fa-square-instagram.fa-2xl {
 			font-size: 4em;
@@ -696,7 +714,7 @@ section.footer {
 			line-height: 1;
 			padding: 0 15px;
 		}
-	}
+	}	
 	#termsAndConditions {
 		cursor: pointer;
 	}

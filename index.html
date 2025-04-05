@@ -54,7 +54,7 @@
 
         <ul class="list-unstyled menu-elements">
           <li class="active">
-            <a class="scroll-link" href="#top-content"
+            <a class="scroll-link" href="#" id="goToHomeSection"
               ><i class="fas fa-home"></i> Home</a
             >
           </li>
@@ -69,12 +69,12 @@
             >
           </li>
           <li>
-            <a class="scroll-link" href="#section-5"
+            <a class="scroll-link" href="#" id="goToPortfolioSection"
               ><i class="fas fa-pencil-alt"></i> Portfolio</a
             >
           </li>
           <li>
-            <a class="scroll-link" href="#section-6"
+            <a class="scroll-link" href="#" id="goToContactMeSection"
               ><i class="fas fa-envelope"></i> Contact us</a
             >
           </li>
@@ -215,14 +215,14 @@
               <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 1040px;">
                       <div class="row gradient-border g-4">
                         <div class="col-md-4">
-                          <img src="..." class="img-fluid rounded-start" alt="...">
+                          <img src="assets/images/Phil_James-Rudoni_lrg_090621-min-scaled.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h3 class="card-title">PRS Photography</h3>
+                            <a href="https://prsphotography.com/" target="_blank"><h3 class="card-title hvr-grow"><mark>PRS Photography</mark></h3></a>
                             <blockquote class="blockquote mb-0">
                               <p>Working with Jose at West Sussex Web Design was a no-brainer
                                 for me. His responsiveness and next-to-none level of care for my vision made 
@@ -236,27 +236,28 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="card mb-3" style="max-width: 540px;">
-                      <div class="row gradient-border g-4">
+                    <div class="card mb-3" style="max-width: 1040px;">
+                      <div class="row gradient-border g-4">  
                         <div class="col-md-4">
-                          <img src="..." class="img-fluid rounded-start" alt="...">
-                        </div>
+                          <img src="assets/images/ChatGPT Image Apr 5, 2025, 10_45_15 PM.png" class="img-fluid rounded-start" alt="...">
+                        </div>                                              
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h3 class="card-title">Pack London</h3>
+                            <a href="https://incapablestaircase.com/" target="_blank"><h3 class="card-title hvr-grow"><mark>Incapable Staircase</mark></h3></a>
                             <blockquote class="blockquote mb-0">
                               <p>Working with Jose at West Sussex Web Design was a no-brainer
                                 for me. His responsiveness and next-to-none level of care for my vision made 
                                 everything easy for me.
                               </p>
-                              <footer class="blockquote-footer">Jules Boyson,  <cite title="Source Title">Director of Pack London</cite></footer>
+                              <footer class="blockquote-footer">James Bridgeman,  <cite title="Source Title">Founder of Incapable Staircase</cite></footer>
                             </blockquote>
                           </div>
                         </div>
+                        
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <!-- <div class="carousel-item">
                     <div class="card mb-3" style="max-width: 540px;">
                       <div class="row gradient-border g-4">
                         <div class="col-md-4">
@@ -271,7 +272,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   
                 </div>
                 
@@ -453,7 +454,7 @@
     <section class="pricePlans" id="customerPricePlans">
       <div class="container-fluid px-sm-0 px-md-2 px-lg-5">
         <div class="animate row row-cols row-cols-lg-2 row-cols-xl-3 g-4" data-animate>
-          <div class="col">
+          <div class="col starterWebsitePackageDesktopView">
             <article class="card">
               <h2 class="card__title"><mark>Starter</mark> website package</h2>
               <p>
@@ -470,6 +471,32 @@
                 <li><mark>Price: <i class="fa-solid fa-sterling-sign"></i> 475</mark></li>
               </ul>
                 
+            </article>
+          </div>
+          <div class="col starterWebsitePackageMobileView d-none">
+            <article class="card">
+              <h2 class="card__title"><mark>Starter</mark> website package</h2>
+              <div class="accordion_container">
+                <div class="accordion_head d-flex justify-content-around">
+                  <p>Read more...</p>            
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="accordion_body" style="display: none;">
+                  <p>
+                    Perfect for small businesses, freelancers, or personal projects that need a sleek, 
+                    no-fuss website to showcase who you are and what you do.
+                  </p>
+                  
+                  <ul class="align-self-start text-start">
+                    <li><mark><i class="fa-solid fa-box-open"></i> What’s included?</mark></li>
+                    <li><i class="fa-solid fa-circle-check"></i> Up to 3 pages (e.g., Home, About, Contact)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Responsive design (looks great on mobile, tablet & desktop)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Basic SEO setup (so Google knows you exist)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Contact form integration (so customers can reach you easily)</li>
+                    <li><mark>Price: <i class="fa-solid fa-sterling-sign"></i> 475</mark></li>
+                  </ul>
+                </div>
+              </div>              
             </article>
           </div>
           <div class="col">
@@ -615,11 +642,11 @@
     </section>
 
     <section class="footer">
-      <div class="container-fluid px-5 footer">    
-        <article class="card align-items-stretch">
+      <div class="container-fluid px-sm-0 px-md-2 px-lg-5 footer">    
+        <article class="card">
           <div class="row align-items-center pb-5">
             <div class="col">            
-              <h2 class="text-center mb-5"><mark>Fancy being social?</mark></h2>
+              <h2 class="text-center mb-sm-0 mb-md-5"><mark>Fancy being social?</mark></h2>
               <div class="footerSocialIcons">
                 <mark class="hvr-grow"><a target="_blank" href="https://www.linkedin.com/in/jose-alberto-castano-738707359/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></mark>
                 <mark class="hvr-grow"><i class="fa-brands fa-square-x-twitter fa-2xl"></i></mark>
@@ -630,13 +657,10 @@
             <div class="col text-center">
               <p><mark>Copyright &#169; 2025<br> West Sussex web design</mark></p>
               <p class="hvr-grow" id="termsAndConditions"><mark>Terms and conditions</mark></p> 
-              <!-- Button trigger modal -->
-              <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#termsAndConditionsModal">
-                Launch demo modal
-              </button> -->
+              
             </div>
             <div class="col">
-              <h2 class="text-center mb-5"><mark>Get in touch</mark></h2>
+              <h2 class="text-center mb-sm-0 mb-md-5"><mark>Get in touch</mark></h2>
               <p><mark><a href="mailto:info@westsussexwebdesign.com" title="Ping us an email" data-toggle="tooltip">info@westsussexwebdesign.com</a></mark></p>
               <p><mark><a href="tel:+447449482437" title="Give us a bell" data-toggle="tooltip">+44 7449 482 437</a></mark></p>
 

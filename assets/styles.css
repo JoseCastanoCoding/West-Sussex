@@ -524,11 +524,20 @@ form .btn-primary {
   .whatIDoMainCardMobileView {
     display: flex !important;
   }
+  .starterWebsitePackageDesktopView {
+    display: none;
+  }
+  .starterWebsitePackageMobileView {
+    display: flex !important;
+  }
   .Typewriter__wrapper h1 {
     font-size: 3.25rem;
   }
   #dotlottie-canvas {
     display: none;
+  }
+  section.footer .row .col:nth-child(2) {
+    order: 3;
   }
 }
 @keyframes scroll {
@@ -599,13 +608,16 @@ form .btn-primary {
   font-size: 25px;
 }
 
-#termsAndConditionsModal li, p {
+#termsAndConditionsModal li, #termsAndConditionsModal p {
   color: #fff;
+}
+#termsAndConditionsModal ::marker {
+  font-size: 1.75rem;
 }
 
 section.footer .footerSocialIcons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 section.footer .footerSocialIcons i.fa-brands.fa-linkedin.fa-2xl, section.footer .footerSocialIcons i.fa-brands.fa-square-x-twitter.fa-2xl, section.footer .footerSocialIcons i.fa-brands.fa-square-instagram.fa-2xl {
   font-size: 4em;
