@@ -590,6 +590,30 @@ form {
 		display: flex!important;
 	}
 
+	.businessWebsitePackageDesktopView {
+		display: none;
+	}
+
+	.businessWebsitePackageMobileView {
+		display: flex!important;
+	}
+
+	.ecommerceWebsitePackageDesktopView {
+		display: none;
+	}
+
+	.ecommerceWebsitePackageMobileView {
+		display: flex!important;
+	}
+
+	.bespokeWebsitePackageDesktopView {
+		display: none;
+	}
+
+	.bespokeWebsitePackageMobileView {
+		display: flex!important;
+	}
+
 	.Typewriter__wrapper h1 {
 		font-size: 3.25rem;
 	}

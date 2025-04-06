@@ -107,14 +107,14 @@ jQuery(document).ready(function() {
   window.addEventListener("scroll", handleScroll);
 
   $(".accordion_head").on("click", function () {
-        if ($('.accordion_body').is(':visible')) {
-            $(".accordion_body").slideUp(300);
-            $('.accordion_head p').text('Read more...');
-            $('.accordion_head i').removeClass('fa-minus').addClass('fa-plus');        
+        if ($(this.nextElementSibling).is(':visible')) {
+            $(this.nextElementSibling).slideUp(300);
+            $(this.children[0]).text('Read more...');
+            $(this.children[1]).removeClass('fa-minus').addClass('fa-plus');        
         } else {
-            $(".accordion_body").slideDown(300);            
-            $('.accordion_head p').text('Read less...');
-            $('.accordion_head i').removeClass('fa-plus').addClass('fa-minus');            
+            $(this.nextElementSibling).slideDown(300);            
+            $(this.children[0]).text('Read less...');
+            $(this.children[1]).removeClass('fa-plus').addClass('fa-minus');            
         }
     });
 
