@@ -614,6 +614,14 @@ form {
 		display: flex!important;
 	}
 
+	.hostingWebsitePackageDesktopView {
+		display: none;
+	}
+
+	.hostingWebsitePackageMobileView {
+		display: flex!important;
+	}
+
 	.Typewriter__wrapper h1 {
 		font-size: 3.25rem;
 	}
@@ -622,9 +630,9 @@ form {
 		display: none;
 	}	
 
-	section.footer .row .col:nth-child(2) {
-		order: 3;
-	}
+	// section.footer .row .col:nth-child(2) {
+	// 	order: 3;
+	// }
 	
 }
 
