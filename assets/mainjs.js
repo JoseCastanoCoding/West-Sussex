@@ -133,7 +133,7 @@ $('#contactFormCustomerDetails').on('submit', function(event) {
     formData.append('template_id', 'template_1bly4l6');
     formData.append('user_id', 'NwRE7fbZdGQeHfDDK');
  
-    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+    $.ajax('http://localhost:5500/send-form', {
         type: 'POST',
         data: formData,
         contentType: false, // auto-detection
