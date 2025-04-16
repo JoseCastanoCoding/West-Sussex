@@ -126,22 +126,28 @@ jQuery(document).ready(function() {
 });
 
 $('#contactFormCustomerDetails').on('submit', function(event) {
-    event.preventDefault(); // prevent reload
-    
-    var formData = new FormData(this);
-    formData.append('service_id', 'service_e8zfcza');
-    formData.append('template_id', 'template_1bly4l6');
-    formData.append('user_id', 'NwRE7fbZdGQeHfDDK');
- 
-    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
-        type: 'POST',
-        data: formData,
-        contentType: false, // auto-detection
-        processData: false // no need to parse formData to string
-    }).done(function() {        
+    event.preventDefault();
+
+    const formArray = $(this).serializeArray();
+    const formData = {};
+    formArray.forEach(item => {
+        formData[item.name] = item.value;
+    });
+
+    fetch('http://localhost:3001/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        if (!response.ok) throw new Error('Failed to send email');
+        return response.json();
+    })
+    .then(data => {
         $('#contactFormCustomerDetails')[0].reset();
         $('#customerFormSentModal').modal('show');
-    }).fail(function(error) {
-        alert('Oops... ' + JSON.stringify(error));
+    })
+    .catch(error => {
+        alert('Oops... ' + error.message);
     });
 });
