@@ -41,18 +41,27 @@ jQuery(document).ready(function() {
         
     });
 
+    $('#goToPricePlansSection').on("click", function () {
+
     $('#goToPortfolioSection').on("click", function () {
+
 
         $('.sidebar').removeClass('active');
         $('.overlay').removeClass('active');
         
         setTimeout(() => {
+
+            $('html, body').animate({ scrollTop: $('.pricePlans').offset().top }, 'smooth');
+
             $('html, body').animate({ scrollTop: $('.portfolio-and-testimonials').offset().top }, 'smooth');
+
         }, 500);
         
     });
 
+
     $('#goToContactMeSection').on("click", function () {
+
 
         $('.sidebar').removeClass('active');
         $('.overlay').removeClass('active');
