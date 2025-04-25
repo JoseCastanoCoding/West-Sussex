@@ -112,24 +112,24 @@ ul {
 }
 .sidebar ul li a:focus {
   outline: 0;
-  background: #555;
+  background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
   color: #fff;
 }
 .sidebar ul li a i {
   margin-right: 5px;
 }
 .sidebar ul li.active > a {
-  background: #444;
+  background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
   color: #fff;
 }
 .sidebar ul li.active > a:hover {
   outline: 0;
-  background: #555;
+  background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
   color: #fff;
 }
 .sidebar ul li.active > a:focus {
   outline: 0;
-  background: #555;
+  background: linear-gradient(270deg, #d42f4a 0%, #f82bbf 100%);
   color: #fff;
 }
 .sidebar ul ul a {
@@ -524,6 +524,36 @@ form .btn-primary {
   .whatIDoMainCardMobileView {
     display: flex !important;
   }
+  .starterWebsitePackageDesktopView {
+    display: none;
+  }
+  .starterWebsitePackageMobileView {
+    display: flex !important;
+  }
+  .businessWebsitePackageDesktopView {
+    display: none;
+  }
+  .businessWebsitePackageMobileView {
+    display: flex !important;
+  }
+  .ecommerceWebsitePackageDesktopView {
+    display: none;
+  }
+  .ecommerceWebsitePackageMobileView {
+    display: flex !important;
+  }
+  .bespokeWebsitePackageDesktopView {
+    display: none;
+  }
+  .bespokeWebsitePackageMobileView {
+    display: flex !important;
+  }
+  .hostingWebsitePackageDesktopView {
+    display: none;
+  }
+  .hostingWebsitePackageMobileView {
+    display: flex !important;
+  }
   .Typewriter__wrapper h1 {
     font-size: 3.25rem;
   }
@@ -599,11 +629,23 @@ form .btn-primary {
   font-size: 25px;
 }
 
+#termsAndConditionsModal li, #termsAndConditionsModal p {
+  color: #fff;
+}
+#termsAndConditionsModal ::marker {
+  font-size: 1.75rem;
+}
+
 section.footer .footerSocialIcons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 section.footer .footerSocialIcons i.fa-brands.fa-linkedin.fa-2xl, section.footer .footerSocialIcons i.fa-brands.fa-square-x-twitter.fa-2xl, section.footer .footerSocialIcons i.fa-brands.fa-square-instagram.fa-2xl {
   font-size: 4em;
   color: #0f0620;
+  line-height: 1;
+  padding: 0 15px;
+}
+section.footer #termsAndConditions {
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

@@ -48,13 +48,13 @@
 
         <div class="logo">
           <h3>
-            <a href="index.html">Bootstrap 4 Template with Sidebar Menu</a>
+            <a href="index.html">West Sussex Web Design</a>
           </h3>
         </div>
 
         <ul class="list-unstyled menu-elements">
           <li class="active">
-            <a class="scroll-link" href="#top-content"
+            <a class="scroll-link" href="#" id="goToHomeSection"
               ><i class="fas fa-home"></i> Home</a
             >
           </li>
@@ -74,12 +74,12 @@
             >
           </li>
           <li>
-            <a class="scroll-link" href="#section-5"
-              ><i class="fas fa-pencil-alt"></i> Portfolio</a  
+            <a class="scroll-link" href="#" id="goToPortfolioSection"
+              ><i class="fas fa-pencil-alt"></i> Portfolio</a
             >
           </li>
           <li>
-            <a class="scroll-link" href="#" id="goToContactFormSection"
+            <a class="scroll-link" href="#" id="goToContactMeSection"
               ><i class="fas fa-envelope"></i> Contact us</a
             >
           </li>
@@ -139,8 +139,9 @@
             <article class="card">
               <h2><mark>Websites</mark> that work as hard as you do</h2>
               <div class="accordion_container">
-                <div class="accordion_head"><p>Read more...<span class="plusminus">+</span></p>
-            
+                <div class="accordion_head d-flex justify-content-around">
+                  <p class="pe-5">Read more...</p>            
+                  <i class="fa-solid fa-plus"></i>
                 </div>
                 <div class="accordion_body" style="display: none;">
                   <h3>
@@ -176,7 +177,7 @@
                 website will turn heads—and clicks—your way.
               </p>
               <div class="gradient-border" id="box">
-                <a href="#" class="hvr-grow">Check out <br />my portfolio</a>
+                <a href="#portfolioSection" class="hvr-grow">Check out <br />my portfolio</a>
               </div>
             </article>
           </div>
@@ -219,14 +220,14 @@
               <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 1040px;">
                       <div class="row gradient-border g-4">
-                        <div class="col-md-4">
-                          <img src="..." class="img-fluid rounded-start" alt="...">
+                        <div class="col-md-4 mt-0 px-0">
+                          <img src="assets/images/Phil_James-Rudoni_lrg_090621-min-scaled.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h3 class="card-title">PRS Photography</h3>
+                            <a href="https://prsphotography.com/" target="_blank"><h3 class="card-title hvr-grow"><mark>PRS Photography</mark></h3></a>
                             <blockquote class="blockquote mb-0">
                               <p>Working with Jose at West Sussex Web Design was a no-brainer
                                 for me. His responsiveness and next-to-none level of care for my vision made 
@@ -240,27 +241,28 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="card mb-3" style="max-width: 540px;">
-                      <div class="row gradient-border g-4">
-                        <div class="col-md-4">
-                          <img src="..." class="img-fluid rounded-start" alt="...">
-                        </div>
+                    <div class="card mb-3" style="max-width: 1040px;">
+                      <div class="row gradient-border g-4">  
+                        <div class="col-md-4 mt-0 px-0">
+                          <img src="assets/images/ChatGPT Image Apr 5, 2025, 10_45_15 PM.png" class="img-fluid rounded-start" alt="...">
+                        </div>                                              
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h3 class="card-title">Pack London</h3>
+                            <a href="https://incapablestaircase.com/" target="_blank"><h3 class="card-title hvr-grow"><mark>Incapable Staircase</mark></h3></a>
                             <blockquote class="blockquote mb-0">
                               <p>Working with Jose at West Sussex Web Design was a no-brainer
                                 for me. His responsiveness and next-to-none level of care for my vision made 
                                 everything easy for me.
                               </p>
-                              <footer class="blockquote-footer">Jules Boyson,  <cite title="Source Title">Director of Pack London</cite></footer>
+                              <footer class="blockquote-footer">James Bridgeman,  <cite title="Source Title">Founder of Incapable Staircase</cite></footer>
                             </blockquote>
                           </div>
                         </div>
+                        
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <!-- <div class="carousel-item">
                     <div class="card mb-3" style="max-width: 540px;">
                       <div class="row gradient-border g-4">
                         <div class="col-md-4">
@@ -275,7 +277,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   
                 </div>
                 
@@ -457,7 +459,7 @@
     <section class="pricePlans" id="customerPricePlans">
       <div class="container-fluid px-sm-0 px-md-2 px-lg-5">
         <div class="animate row row-cols row-cols-lg-2 row-cols-xl-3 g-4" data-animate>
-          <div class="col">
+          <div class="col starterWebsitePackageDesktopView">
             <article class="card">
               <h2 class="card__title"><mark>Starter</mark> website package</h2>
               <p>
@@ -476,7 +478,33 @@
                 
             </article>
           </div>
-          <div class="col">
+          <div class="col starterWebsitePackageMobileView d-none">
+            <article class="card">
+              <h2 class="card__title"><mark>Starter</mark> website package</h2>
+              <div class="accordion_container">
+                <div class="accordion_head d-flex justify-content-around">
+                  <p class="pe-5">Read more...</p>            
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="accordion_body" style="display: none;">
+                  <p>
+                    Perfect for small businesses, freelancers, or personal projects that need a sleek, 
+                    no-fuss website to showcase who you are and what you do.
+                  </p>
+                  
+                  <ul class="align-self-start text-start">
+                    <li><mark><i class="fa-solid fa-box-open"></i> What’s included?</mark></li>
+                    <li><i class="fa-solid fa-circle-check"></i> Up to 3 pages (e.g., Home, About, Contact)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Responsive design (looks great on mobile, tablet & desktop)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Basic SEO setup (so Google knows you exist)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Contact form integration (so customers can reach you easily)</li>
+                    <li><mark>Price: <i class="fa-solid fa-sterling-sign"></i> 475</mark></li>
+                  </ul>
+                </div>
+              </div>              
+            </article>
+          </div>
+          <div class="col businessWebsitePackageDesktopView">
             <article class="card">
               <h2 class="card__title"><mark>Business</mark> website package</h2>
               <p>
@@ -493,7 +521,32 @@
               </ul>
             </article>
           </div>
-          <div class="col">
+          <div class="col businessWebsitePackageMobileView d-none">
+            <article class="card">
+              <h2 class="card__title"><mark>Business</mark> website package</h2>
+              <div class="accordion_container">
+                <div class="accordion_head d-flex justify-content-around">
+                  <p class="pe-5">Read more...</p>            
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="accordion_body" style="display: none;">
+                  <p>
+                    For growing brands that need more. A more advanced website for businesses that want to 
+                    stand out with animations, interactive elements, and more content.
+                  </p>
+                  <ul class="align-self-start text-start">
+                    <li><mark><i class="fa-solid fa-box-open"></i> What’s included?</mark></li>
+                    <li><i class="fa-solid fa-circle-check"></i> Up to 5 pages (e.g., Home, About, Services, Blog, Contact)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Front-end animations (smooth transitions, hover effects, etc.)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> CMS integration (easily update your own content)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> SEO-friendly structure (get found on Google)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Mobile-optimized design</li>
+                  </ul>
+                </div>
+              </div>              
+            </article>
+          </div>
+          <div class="col ecommerceWebsitePackageDesktopView">
             <article class="card">
               <h2 class="card__title"><mark>E-Commerce</mark> website package</h2>
               <p>
@@ -510,7 +563,32 @@
               </ul>
             </article>
           </div>
-          <div class="col">
+          <div class="col ecommerceWebsitePackageMobileView d-none">
+            <article class="card">
+              <h2 class="card__title"><mark>E-Commerce</mark> website package</h2>
+              <div class="accordion_container">
+                <div class="accordion_head d-flex justify-content-around">
+                  <p class="pe-5">Read more...</p>            
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="accordion_body" style="display: none;">
+                  <p>
+                    Sell Online, hassle-free. Need an online store? This package gives you everything you need to 
+                    sell products or services easily.
+                  </p>
+                  <ul class="align-self-start text-start">
+                    <li><mark><i class="fa-solid fa-box-open"></i> What’s included?</mark></li>
+                    <li><i class="fa-solid fa-circle-check"></i> Online shop setup (products, categories, images, descriptions)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Shopping cart & checkout system</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Payment gateway integration (Stripe, PayPal, etc.)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Customer accounts & order tracking</li>
+                    <li><i class="fa-solid fa-circle-check"></i> SEO & speed optimization (so people actually find your store)</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col bespokeWebsitePackageDesktopView">
             <article class="card">
               <h2 class="card__title"><mark>Bespoke</mark> web application package</h2>
               <p>
@@ -527,7 +605,32 @@
               </ul>
             </article>
           </div>
-          <div class="col">
+          <div class="col bespokeWebsitePackageMobileView d-none">
+            <article class="card">
+              <h2 class="card__title"><mark>Bespoke</mark> web application package</h2>
+              <div class="accordion_container">
+                <div class="accordion_head d-flex justify-content-around">
+                  <p class="pe-5">Read more...</p>            
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="accordion_body" style="display: none;">
+                  <p>
+                    If you need something beyond a standard website—like a custom CRM, booking system, or a fully bespoke web 
+                    application—this is for you.
+                  </p>
+                  <ul class="align-self-start text-start">
+                    <li><mark><i class="fa-solid fa-box-open"></i> What’s included?</mark></li>
+                    <li><i class="fa-solid fa-circle-check"></i> Custom database-driven functionality</li>
+                    <li><i class="fa-solid fa-circle-check"></i> User authentication & admin dashboard</li>
+                    <li><i class="fa-solid fa-circle-check"></i> API integrations (e.g., connect to third-party services)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Advanced front-end & back-end development</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Security & performance optimizations</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col hostingWebsitePackageDesktopView">
             <article class="card">
               <h2 class="card__title"><mark>Hosting</mark> & maintenance package</h2>
               <p>
@@ -542,6 +645,31 @@
                 <li><i class="fa-solid fa-circle-check"></i> Content updates as needed</li>
                 <li><i class="fa-solid fa-circle-check"></i> Reliable hosting (optional add-on)</li>
               </ul>
+            </article>
+          </div>
+          <div class="col hostingWebsitePackageMobileView d-none">
+            <article class="card">
+              <h2 class="card__title"><mark>Hosting</mark> & maintenance package</h2>
+              <div class="accordion_container">
+                <div class="accordion_head d-flex justify-content-around">
+                  <p class="pe-5">Read more...</p>            
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="accordion_body" style="display: none;">
+                  <p>
+                    A website isn’t a "set it and forget it" thing—it needs regular updates to stay secure and run smoothly. 
+                    I’ll handle that for you.
+                  </p>
+                  <ul class="align-self-start text-start">
+                    <li><mark><i class="fa-solid fa-box-open"></i> What’s included?</mark></li>
+                    <li><i class="fa-solid fa-circle-check"></i> Website updates & bug fixes</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Security monitoring & backups</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Performance optimization</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Content updates as needed</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Reliable hosting (optional add-on)</li>
+                  </ul>
+                </div>
+              </div>
             </article>
           </div>
           <div class="col">
@@ -619,26 +747,35 @@
     </section>
 
     <section class="footer">
-      <div class="container-fluid px-5 footer">      
-        <div class="row align-items-center pb-5">
-          <div class="col">
-            <h2 class="text-center mb-5">Fancy being social?</h2>
-            <div class="footerSocialIcons">
-              <i class="fa-brands fa-linkedin fa-2xl"></i>
-              <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
-              <i class="fa-brands fa-square-instagram fa-2xl"></i>
+      <div class="container-fluid px-sm-0 px-md-2 px-lg-5 footer">    
+        <article class="card">
+          <div class="row align-items-center pb-5">
+            <div class="col mb-5 mb-sm-0 order-0">            
+              <h2 class="text-center mb-0 mb-md-5"><mark>Fancy being social?</mark></h2>
+              <div class="footerSocialIcons">
+                <mark class="hvr-grow"><a target="_blank" href="https://www.linkedin.com/company/west-sussex-web-design/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></mark>
+                <mark class="hvr-grow"><i class="fa-brands fa-square-x-twitter fa-2xl"></i></mark>
+                <mark class="hvr-grow"><a target="_blank" href="https://www.instagram.com/westsussexwebdesign/"><i class="fa-brands fa-square-instagram fa-2xl"></i></a></mark>
+              </div>                     
             </div>
+            <div class="col text-center order-2 order-md-1">
+              <p><mark>Copyright &#169; 2025<br> West Sussex web design</mark></p>
+              <p class="hvr-grow" id="termsAndConditions"><mark>Terms and conditions</mark></p> 
+              
+            </div>
+            <div class="col mb-5 mb-sm-0 order-1 order-md-2">
+              <h2 class="text-center mb-0 mb-md-5"><mark>Get in touch</mark></h2>
+              <p><mark><a href="mailto:info@westsussexwebdesign.com" title="Ping us an email" data-toggle="tooltip">info@westsussexwebdesign.com</a></mark></p>
+              <p><mark><a href="tel:+447449482437" title="Give us a bell" data-toggle="tooltip">+44 7449 482 437</a></mark></p>
+
+            </div>
+          </div>  
+        </article>  
             
-          </div>
-          <div class="col text-center">
-            <p>Copyright &#169; 2025<br> West Sussex web design</p>
-          </div>
-          <div class="col"></div>
-        </div>      
       </div>
     </section>    
 
-    <!-- Modal -->
+    <!-- Modal Customer form sent-->
     <div
       class="modal fade"
       id="customerFormSentModal"
@@ -666,6 +803,76 @@
             >
               Close
             </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Terms and Conditions-->
+    <div class="modal fade" id="termsAndConditionsModal" tabindex="-1" aria-labelledby="termsAndConditionsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="termsAndConditionsModalLabel"><mark>Terms and Conditions</mark></h3>            
+          </div>
+          <div class="modal-body">
+            <p>Last updated: 05/04/2025</p>
+            <p>Welcome to West Sussex Web Design</p>
+            <p>These Terms and Conditions ("Terms") govern your access to and use of services provided by West Sussex Web Design, a freelance web designer operating under UK law. 
+              By engaging with our services, you agree to be bound by these Terms.
+            </p>
+            <ol>
+              <li><p>Services</p></li>
+              <p>I provide professional web design and development services tailored to your needs. The scope of work will be detailed in a written agreement or project 
+                brief prior to commencement.</p>
+              <li><p>Payments</p></li>
+              <ul>
+                <li><p>A 50% non-refundable deposit is required upfront before any work begins.</p></li>
+                <li><p>The remaining 50% is due upon final project delivery, prior to the transfer of files or website going live.</p></li>
+                <li><p>Payment can be made via bank transfer or any method specified in the invoice.</p></li>                
+              </ul>
+              <li><p>Project Timelines</p></li>
+              <ul>
+                <li><p>Estimated timelines will be agreed upon prior to project commencement.</p></li>
+                <li><p>Timelines are dependent on timely feedback, content delivery, and approvals from the client.</p></li>
+                <li><p>Delays in client response may affect the final delivery date.</p></li>                
+              </ul>
+              <li><p>Revisions</p></li>
+              <ul>
+                <li><p>3 rounds of revisions are included in the original project cost.</p></li>
+                <li><p>Additional revisions will be charged at hourly rate or fee.</p></li>
+              </ul>
+              <li><p>Client Responsibilities</p></li>
+              <ul>
+                <li><p>Providing accurate and timely content, materials, and feedback.</p></li>
+                <li><p>Ensuring they have the necessary rights to all content provided.</p></li>
+              </ul>
+              <li><p>Ownership & Copyright</p></li>
+              <ul>
+                <li><p>Upon full payment, all design and source files created for the client will be transferred and become the client's property.</p></li>
+                <li><p>Until the final payment is received, all deliverables remain the property of West Sussex Web Design.</p></li>
+              </ul>
+              <li><p>Cancellations & Refunds</p></li>
+              <ul>
+                <li><p>The 50% deposit is non-refundable.</p></li>
+                <li><p>If the client cancels the project after work has started, no further refunds will be issued, and any additional work completed beyond the deposit value may be invoiced.</p></li>
+              </ul>
+              <li><p>Limitation of Liability</p></li>
+              <ul>
+                <li><p>I am not liable for any loss or damage arising from the use of the completed website.</p></li>
+                <li><p>I do not guarantee uninterrupted or error-free operation of the website once handed over.</p></li>
+              </ul>
+              <li><p>Confidentiality</p></li>
+              <p>Any information shared by the client will be treated as confidential and will not be disclosed to third parties without written consent.</p>
+              <li><p>Governing Law</p></li>
+              <p>These Terms are governed by the laws of "England and Wales". Any disputes will be subject to the exclusive jurisdiction of the courts in Brighton and Hove.</p>
+            </ol>
+            <p>Contact</p>
+            <p>If you have any questions about these Terms, please get in touch at <a href="mailto:info@westsussexwebdesign.com">info@westsussexwebdesign.com</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             
           </div>
         </div>

@@ -8,6 +8,17 @@ jQuery(document).ready(function() {
 
     });
 
+    $('#goToHomeSection').on("click", function () {
+
+        $('.sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        
+        setTimeout(() => {
+            $('html, body').animate({ scrollTop: 0 }, 'smooth');
+        }, 500);
+        
+    });
+
     $('#goToWhatIDoMainCardSection').on("click", function () {
 
         $('.sidebar').removeClass('active');
@@ -32,16 +43,25 @@ jQuery(document).ready(function() {
 
     $('#goToPricePlansSection').on("click", function () {
 
+    $('#goToPortfolioSection').on("click", function () {
+
+
         $('.sidebar').removeClass('active');
         $('.overlay').removeClass('active');
         
         setTimeout(() => {
+
             $('html, body').animate({ scrollTop: $('.pricePlans').offset().top }, 'smooth');
+
+            $('html, body').animate({ scrollTop: $('.portfolio-and-testimonials').offset().top }, 'smooth');
+
         }, 500);
         
     });
 
-    $('#goToContactFormSection').on("click", function () {
+
+    $('#goToContactMeSection').on("click", function () {
+
 
         $('.sidebar').removeClass('active');
         $('.overlay').removeClass('active');
@@ -95,16 +115,21 @@ jQuery(document).ready(function() {
   handleScroll(); // Run on page load
   window.addEventListener("scroll", handleScroll);
 
-  $(".accordion_head").click(function () {
-        if ($('.accordion_body').is(':visible')) {
-            $(".accordion_body").slideUp(300);
-            $('.accordion_head p').text('Read more...');
-            $('.accordion_head span.plusminus').text('+');
+  $(".accordion_head").on("click", function () {
+        if ($(this.nextElementSibling).is(':visible')) {
+            $(this.nextElementSibling).slideUp(300);
+            $(this.children[0]).text('Read more...');
+            $(this.children[1]).removeClass('fa-minus').addClass('fa-plus');        
         } else {
-            $(".accordion_body").slideDown(300);            
-            $('.accordion_head p').text('Read less');
-            $('.accordion_head p .plusminus').text('-');
+            $(this.nextElementSibling).slideDown(300);            
+            $(this.children[0]).text('Read less...');
+            $(this.children[1]).removeClass('fa-plus').addClass('fa-minus');            
         }
+    });
+
+    var termsAndConditionsModal = $("#termsAndConditionsModal");
+    $("#termsAndConditions").on("click", function() {
+        termsAndConditionsModal.modal("show");
     });
 
 });
